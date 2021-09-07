@@ -1,0 +1,71 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+    <script src="https://kit.fontawesome.com/8d0402ec72.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <main class="content">
+        <h2>Login</h2>
+        <!-- Formulário de login -->
+        <form action="" method="POST">
+            {% csrf_token %}
+
+            <div class="input-field">
+                <input type="text" name="text" id="text" placeholder="Digite seu usuário:">
+                <div class="underline"></div>
+            </div>
+            <br>
+            <div class="input-field">
+                <input type="password" name="password" id="password" placeholder="Digite sua senha:">
+                <div class="underline"></div>
+            </div>
+
+            <input type="submit" value="Continue">
+        </form>
+
+        <!-- Login com redes sociais -->
+        <div class="footer">
+            <span>ou conecte com sua midia social</span>
+            <div class="social-fields">
+                <!-- <div class="social-field twitter">
+                    <a href="#">
+                        <i class="fab fa-twitter"></i>
+                        Logar usando Twitter
+                    </a>
+                </div> -->
+                <div class="social-field facebook">
+                    <a href="#">
+                        <i class="fab fa-facebook-f"></i>
+                        Logar usando Facebook
+                    </a>
+                </div>
+                <div class="social-field google">
+                    <a href="#">
+                        <i class="fab fa-google-plus-g"></i>
+                        Logar usando Google
+                    </a>
+                </div>
+                <div class="social-field github">
+                    <a href="#">
+                        <i class="fab fa-github"></i>
+                        <!-- <i class="fab fa-github-alt"></i> -->
+                        Logar usando GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>
