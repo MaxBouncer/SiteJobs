@@ -32,11 +32,11 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 # SECRET_KEY = BASE_DIR.getenv('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = os.getenv('DEBUG', False)
-DEBUG = False
+DEBUG = os.getenv('DEBUG', False)
+# DEBUG = False
 
-ALLOWED_HOSTS = ['django1-rcorrea.herokuapp.com']
-# ALLOWED_HOSTS = ['*']
+# ALLOWED_HOSTS = ['django1-rcorrea.herokuapp.com']
+ALLOWED_HOSTS = ['*']
 
 # Eu coloquei aqui entre o ALLOWED_HOSTS e o LOGIN_URL, mas você
 # pode colocar aonde quiser, desde que faça algum sentido.
