@@ -34,10 +34,10 @@ SECRET_KEY = 'django-insecure-&1dr0r6x!1(l4g^in3!(1b!)-*sg_-o3z(y#)kfc-2ae&h%t23
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = os.getenv('DEBUG', False)
-DEBUG = True
+DEBUG = False
 
-# ALLOWED_HOSTS = ['django1-rcorrea.herokuapp.com']
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['django1-rcorrea.herokuapp.com']
+# ALLOWED_HOSTS = ['*']
 
 # Eu coloquei aqui entre o ALLOWED_HOSTS e o LOGIN_URL, mas você
 # pode colocar aonde quiser, desde que faça algum sentido.
